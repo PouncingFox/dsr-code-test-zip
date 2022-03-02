@@ -1,0 +1,138 @@
+html {
+  background-color: #d3d3d3;
+
+}
+h1, h2, h3, p, i, strong {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+b {
+  font-weight: 700;
+}
+p, i, strong {
+  display: block;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+strong {
+  font-weight: 700;
+}
+input[type=text] {
+  height: 32px;
+  border: 2px solid #FFB300;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+/* Form */
+#form {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#form h1 {
+  margin-bottom: 10px;
+}
+#form .submit-btn {
+  background: #00A7D6;
+  border: 2px solid #00A7D6;
+  font-size: 1.2rem;
+  padding: 5px 30px;
+  color: white;
+}
+
+/* Results */ 
+#results {
+  width: 100%;
+  background-color: #efefef;
+  padding: 100px 0;
+}
+#results .state-name {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #FFB300;
+  font-weight: 700;
+  font-size: 3rem;
+}
+#results .center {
+  text-align: center;
+}
+#results .img-wrapper img {
+  width: 82%;
+  filter: invert(54%) sepia(81%) saturate(3393%) hue-rotate(161deg) brightness(94%) contrast(102%);
+}
+#results .col-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#results .col {
+  width: 25%;
+  flex: 0 0 25%;
+}
+#results .right p, strong {
+  font-size: 1.4rem;
+}
+#results .city, #results .state, #results .country {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+#results .city, #results .country {
+  border: 2px solid #00A7D6;
+}
+#results .state {
+  border: 2px solid #FFB300;
+}
+#results .technical {
+  text-align: center;
+  margin-top: 50px;
+}
+#results .technical .details {
+  display: flex;
+  justify-content: center;
+}
+#results .lat, #results .long {
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, #e2e2e2 0, #e2e2e2 50%);
+}
+#results .lat {
+  border: 2px solid #00A7D6;
+}
+#results .long {
+  border: 2px solid #FFB300;
+}
+#results .lat p, #results .long p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  #form .submit-btn {
+    margin-top: 10px;
+  }
+  #form p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #results .col-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #results .col {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
